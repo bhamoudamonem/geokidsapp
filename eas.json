@@ -1,37 +1,12 @@
 {
   "cli": {
-    "version": ">= 16.28.0",
-    "appVersionSource": "remote"
+    "version": ">= 18.0.0"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
     "preview": {
-      "distribution": "internal",
       "android": {
         "buildType": "apk"
-      },
-      "env": {
-        "EXPO_PUBLIC_GROQ_API_KEY": "YOUR_NEW_KEY_HERE",
-        "EXPO_PUBLIC_GROQ_MODEL": "llama-3.1-8b-instant",
-        "EXPO_PUBLIC_GROQ_BASE_URL": "https://api.groq.com/openai/v1"
-      }
-    },
-    "production": {
-      "autoIncrement": true,
-      "android": {
-        "buildType": "app-bundle"
-      },
-      "env": {
-        "EXPO_PUBLIC_GROQ_API_KEY": "YOUR_NEW_KEY_HERE",
-        "EXPO_PUBLIC_GROQ_MODEL": "llama-3.1-8b-instant",
-        "EXPO_PUBLIC_GROQ_BASE_URL": "https://api.groq.com/openai/v1"
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
